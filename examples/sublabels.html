@@ -17,21 +17,14 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="../venn.js"></script>
 <script>
+	
 var sets = [
-{sets:["A"], size: 12},
-{sets:["B"], size: 12},
-{sets:["C"], size: 12},
-{sets:["D"], size: 12},
-{sets: ["A", "B"], size: 6, label: "AB"},
-{sets: ["B", "C"], size: 6, label: "BC"},
-{sets: ["B", "D"], size: 6, label: "BD"},
-{sets: ["A", "D"], size: 6, label: "AD"},
-{sets: ["A", "B", "C"], size: 4, label: "ABC"},
-{sets: ["A", "B", "D"], size: 4, label: "ABD"},
-{sets: ["A", "C", "D"], size: 4, label: "ACD"},
-{sets: ["B", "C", "D"], size: 4, label: "BCD"},
-{sets: ["A", "B", "C", "D"], size: 2, label: "ABCD"}
-];
+{sets:["Anxiety disorder"], size: 12},         
+{sets:["Dimentia"], size: 12},            
+{sets:["Depression"], size: 12},						
+{sets: ["Anxiety disorder","Dimentia", "Depression"], size: 12, label: "Confusion"}			
+ ];
+	
 var chart = venn.VennDiagram()
     .wrap(false)
     .fontSize("16px")
