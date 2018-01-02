@@ -21,10 +21,10 @@ var sets = [
             {sets:["Dimentia"], size: 12},
             {sets:["Depression"], size: 12},
             {sets:["Anxiety disorder"], size: 12},
-            {sets: ["Dimentia", "Depression"], size: 4, label: "Redundancy"},
-            {sets: ["Dimentia", "Anxiety disorder"], size: 4, label: "Pie Charts"},
-            {sets: ["Depression", "Anxiety disorder"], size: 4, label: "Eclipses"},
-            {sets: ["Dimentia", "Depression", "Anxiety disorder"], size: 2, label: "Venn Diagrams"}
+            {sets: ["Dimentia", "Depression"], size: 4, label: "Dimentia"},
+            {sets: ["Dimentia", "Anxiety disorder"], size: 4, label: "Depression"},
+            {sets: ["Depression", "Anxiety disorder"], size: 4, label: "Anxiety disorder"},
+            {sets: ["Dimentia", "Depression", "Anxiety disorder"], size: 2, label: "Depression"}
     ];
 
 var chart = venn.VennDiagram()
