@@ -18,13 +18,13 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 <script src="../venn.js"></script>
 <script>
 var sets = [
-            {sets:["Information"], size: 12},
-            {sets:["Overlap"], size: 12},
-            {sets:["Circles"], size: 12},
-            {sets: ["Information", "Overlap"], size: 4, label: "Redundancy"},
-            {sets: ["Information", "Circles"], size: 4, label: "Pie Charts"},
-            {sets: ["Overlap", "Circles"], size: 4, label: "Eclipses"},
-            {sets: ["Information", "Overlap", "Circles"], size: 2, label: "Venn Diagrams"}
+            {sets:["Dimentia"], size: 12},
+            {sets:["Depression"], size: 12},
+            {sets:["Anxiety disorder"], size: 12},
+            {sets: ["Dimentia", "Depression"], size: 4, label: "Dimentia"},
+            {sets: ["Dimentia", "Anxiety disorder"], size: 4, label: "Depression"},
+            {sets: ["Depression", "Anxiety disorder"], size: 4, label: "Anxiety disorder"},
+            {sets: ["Dimentia", "Depression", "Anxiety disorder"], size: 2, label: "Depression"}
     ];
 
 var chart = venn.VennDiagram()
@@ -73,19 +73,5 @@ function updateVenn(sets) {
 
     return layout;
 }
-
-// add/remove set areas to showcase transitions
-updateVenn(sets.slice(0, 1));
-var i = 1, direction = 1;
-window.setInterval( function() {
-    i += direction;
-    if (i >= sets.length) {
-        direction = -1;
-    } else if (i <= 1) {
-        direction = 1;
-    }
-    updateVenn(sets.slice(0, i));
-}, 1500);
-
 </script>
 </html>
