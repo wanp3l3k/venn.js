@@ -19,13 +19,18 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 <script>
 	
 var sets = [
-{sets:["Anxiety disorder"], size: 12},         
-{sets:["Dimentia"], size: 12},            
+   
+{sets:["Anxiety disorder"], size: 12},
+            
+{sets:["Dimentia"], size: 12},
+            
 {sets:["Depression"], size: 12},
-{sets: ["Dimentia", "Depression"], size: 4, label: "Confusion"},
-{sets: ["Anxiety disorder", "Dimentia"], size: 4, label: "Confusion"},
-{sets: ["Anxiety disorder", "Depression"], size: 4, label: "Confusion"},	
-{sets: ["Anxiety disorder", "Dimentia", "Depression"], size: 2, label: "Confusion"}			
+				
+		
+{sets: ["Anxiety disorder","Dimentia", "Depression"], size: 12, label: "Confusion"},
+	
+{sets: ["Anxiety disorder", "Depression"], size: 12, label: "Depressed"},
+			
  ];
 	
 var chart = venn.VennDiagram()
