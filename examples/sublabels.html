@@ -18,16 +18,15 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 <script src="../venn.js"></script>
 <script>
 var sets = [
-            {sets:["Poor Judgement"], size: 12},
-            {sets:["Changes in eating habits"], size: 12},
-            {sets:["Depressed"], size: 12},
-	    {sets:["Confusion"], size: 12},
-            {sets: ["Dimentia", "Depression"], size: 4, label: "Poor Judgement"},
+            {sets:["Depression"], size: 12},
+            {sets:["Dimentia"], size: 12},
+            {sets:["Bipolar disorder"], size: 12},
+			{sets:["Anxiety disorder"], size: 12},
             {sets: ["Bipolar disorder", "Depression"], size: 4, label: "Changes in eating habits"},
             {sets: ["Bipolar disorder", "Dimentia"], size: 4, label: "Depressed"},
-            {sets: ["Bipolar disorder", "Depression", "Anxiety disorder"], size: 2, label: "Confusion"}
+            {sets: ["Depression", "Bipolar disorder", "Anxiety disorder"], size: 2, label: "Confusion"},
+			{sets: ["Depression", "Dimentia", "Bipolar disorder"], size: 2, label: "Poor Judgement"}
     ];
-  }
 
 var chart = venn.VennDiagram()
     .wrap(false)
