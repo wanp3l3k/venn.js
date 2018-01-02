@@ -1,0 +1,8 @@
+title: Venn.js
+description: A javascript library for laying out area proportional venn and euler diagrams
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-merlot
+
+gems:
+  - jekyll-mentions
